@@ -1,0 +1,275 @@
+<html>
+  <head>
+    <title>About</title>
+    <style>
+      /* General Page Styles */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #eccbcb; /* Light background for contrast */
+      }
+
+      h1, h2, h3, p {
+        margin: 0;
+        padding: 0;
+      }
+
+      a {
+        text-decoration: none;
+        color: #0066cc; /* Default link color */
+      }
+
+      a:hover {
+        color: #004080; /* Darker link color on hover */
+      }
+
+      /* About Us Section */
+      .about-us {
+        background-color: #6daeef; /* Light orange background */
+        padding: 2em;
+      }
+
+      .about-us h1 {
+        font-family: Georgia, serif;
+        color: #000000; /* Bright orange for main heading */
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 3em;
+      }
+
+      /* Mission and Vision Section */
+      .mission-vision {
+        font-weight: bold;
+        font-family: 'Times New Roman', Times, serif;
+        background-color: #e6f7ff; /* Light blue background */
+        padding: 1.5em;
+        border-radius: 10px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        margin-bottom: 2em;
+      }
+
+      .mission-vision h2 {
+        color: #0a0a0b; /* Dark blue for subheading */
+        font-weight: bold;
+        margin-bottom: 1em;
+        font-family: 'Times New Roman', Times, serif;
+      }
+
+      .mission-vision p {
+        color: #333; /* Darker text for better readability */
+        font-size: 1.1em;
+      }
+
+      /* Faculty and Staff Section */
+      .faculty-staff {
+        background-color: #ffe6e6; /* Light pink background */
+        padding: 1.5em;
+        border-radius: 10px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        margin-bottom: 2em;
+        font-family: 'Times New Roman', Times, serif;
+      }
+
+      .faculty-staff h2 {
+        color: #090909; /* Bold red for faculty heading */
+        font-weight: bold;
+        margin-bottom: 1em;
+
+        font-family: 'Times New Roman', Times, serif;
+      }
+
+      .faculty-staff ul {
+        list-style: none;
+        padding: 0;
+        font-family: 'Times New Roman', Times, serif;
+      }
+
+      .faculty-staff li {
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        font-family: 'Times New Roman', Times, serif;
+      }
+
+      .faculty-staff img {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        margin-right: 15px;
+        font-family: 'Times New Roman', Times, serif;
+      }
+
+      .faculty-staff h3 {
+        color: #000000; /* Dark red for faculty names */
+        font-weight: bold;
+        font-family: 'Times New Roman', Times, serif;
+      }
+
+      .faculty-staff p {
+        color: #333;
+        margin-bottom: 5px;
+        font-family: 'Times New Roman', Times, serif;
+      }
+
+      /* Affiliations and Accreditation Section */
+      .affiliations-accreditation {
+        background-color: #e6ffe6; /* Light green background */
+        padding: 1.5em;
+        border-radius: 10px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        font-family: 'Times New Roman', Times, serif;
+      }
+
+      .affiliations-accreditation h2 {
+        color: #010202; /* Dark green for heading */
+        font-weight: bold;
+        margin-bottom: 1em;
+        font-family: 'Times New Roman', Times, serif;
+      }
+
+      .affiliations-accreditation ul {
+        list-style: none;
+        padding: 0;
+        font-family: 'Times New Roman', Times, serif;
+      }
+
+      .affiliations-accreditation li {
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        font-family: 'Times New Roman', Times, serif;
+      }
+
+      .affiliations-accreditation img {
+        width: 40px;
+        height: 40px;
+        margin-right: 15px;
+        font-family: 'Times New Roman', Times, serif;
+      }
+
+      /* Responsive Design */
+      @media (max-width: 768px) {
+        .about-us {
+          padding: 1em;
+        }
+
+        .mission-vision, .faculty-staff, .affiliations-accreditation {
+          padding: 1em;
+        }
+      }
+      .footer {
+        background-color: #333; /* Dark background for footer */
+        color: #fff;
+        padding: 2em;
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+      }
+
+      .footer h2 {
+        margin-top: 0;
+      }
+
+      .footer p {
+        margin: 10px 0;
+        font-size: 1em;
+      }
+
+      .footer ul {
+        list-style: none;
+        padding: 0;
+        margin: 20px 0;
+      }
+
+      .footer ul li {
+        display: inline-block;
+        margin: 0 10px;
+      }
+
+      .footer ul li a {
+        color: #fff;
+        font-size: 18px;
+        transition: color 0.3s ease;
+      }
+
+      .footer ul li a:hover {
+        color: #fcfcfc; /* Green hover effect */
+      }
+
+      /* Responsive Design */
+      @media (max-width: 768px) {
+        .about-us {
+          padding: 1em;
+        }
+
+        .mission-vision, .faculty-staff, .affiliations-accreditation {
+          padding: 1em;
+        }
+
+        .footer {
+          padding: 1em;
+        }
+    </style>
+  </head>
+
+  <body>
+    <section class="about-us">
+      <h1>About Us</h1>
+      
+      <section class="mission-vision">
+        <h2>Mission and Vision</h2>
+        <p>Our mission is to provide high-quality, affordable, and accessible education to students worldwide. Our vision is to become a leading provider of external degree programs, empowering students to achieve their academic and professional goals.</p>
+      </section>
+
+      <section class="faculty-staff">
+        <h2>Faculty and Staff</h2>
+        <ul>
+          <li>
+            <img src="images.jpeg" alt="Faculty 1">
+            <div>
+              <h3>Dr. John Smith</h3>
+              <p>Program Coordinator, Bachelor of Business Administration</p>
+              <a href="mailto:john.smith@example.com">john.smith@gmail.com</a>
+            </div>
+          </li>
+          <li>
+            <img src="Unknown.jpeg" alt="Faculty 2">
+            <div>
+              <h3>Dr. Jane Doe</h3>
+              <p>Lecturer, Master of Business Administration</p>
+              <a href="mailto:jane.doe@example.com">jane.doe@gmail.com</a>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section class="affiliations-accreditation">
+        <h2>Affiliations and Accreditation</h2>
+        <ul>
+          <li>
+            <img src="Unknown1.png" alt="University Logo"> 
+            Partner University: oxford university
+          </li>
+          <li>
+            <img src="Unknown1.png" alt="Accrediting Body Logo"> 
+            Accredited by: oxford university
+          </li>
+          <li>Recognized by: Government of USA</li>
+        </ul>
+      </section>
+    </section>
+    <!-- Footer Section -->
+    <footer class="footer">
+        <h2>Contact Us</h2>
+        <p>123 Main St, Maradana, Colombo</p>
+        <p>Email: <a href="mailto:info@example.com">info@example.com</a></p>
+        <p>Phone: +1 (123) 456-7890</p>
+        <ul>
+          <li><a href="#" class="fa fa-facebook"></a></li>
+          <li><a href="#" class="fa fa-twitter"></a></li>
+          <li><a href="#" class="fa fa-instagram"></a></li>
+          <li><a href="#" class="fa fa-linkedin"></a></li>
+        </ul>
+      </footer>
+  </body>
+</html>

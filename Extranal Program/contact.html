@@ -1,0 +1,222 @@
+<html>
+  <head>
+    <title>Contact</title>
+    <style>
+      /* General Page Styling */
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #eef2f3; /* Light gray background */
+        margin: 0;
+        padding: 0;
+      }
+
+      h1, h2 {
+        margin: 0;
+        padding: 0;
+      }
+
+      /* Contact Section */
+      .contact {
+        background-color: #ffebcc; /* Light orange */
+        padding: 3em;
+      }
+
+      .contact h1 {
+        text-align: center;
+        color: #ff6600; /* Bright orange */
+        margin-bottom: 1.5em;
+      }
+
+      /* Contact Form Styling */
+      .contact-form {
+        background-color: #fff;
+        padding: 2em;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin-bottom: 2em;
+        max-width: 600px;
+        margin: 0 auto;
+      }
+
+      .contact-form h2 {
+        color: #333;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 1em;
+      }
+
+      .contact-form label {
+        display: block;
+        margin-bottom: 10px;
+        color: #666;
+      }
+
+      .contact-form input[type="text"], .contact-form input[type="email"], .contact-form textarea {
+        width: 100%;
+        padding: 12px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      .contact-form textarea {
+        height: 150px;
+      }
+
+      .contact-form input[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        display: block;
+        width: 100%;
+        font-size: 1em;
+      }
+
+      .contact-form input[type="submit"]:hover {
+        background-color: #3e8e41;
+      }
+
+      /* Contact Info Styling */
+      .contact-info {
+        background-color: #f0fff0; /* Light green */
+        padding: 2em;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin-bottom: 2em;
+        max-width: 600px;
+        margin: 0 auto;
+      }
+
+      .contact-info h2 {
+        color: #339966; /* Dark green */
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 1em;
+      }
+
+      .contact-info ul {
+        list-style: none;
+        padding: 0;
+        text-align: center;
+      }
+
+      .contact-info li {
+        margin-bottom: 10px;
+        font-size: 1.1em;
+      }
+
+      .contact-info i {
+        color: #339966; /* Icon color */
+        margin-right: 10px;
+      }
+
+      /* Social Media Section Styling */
+      .social-media {
+        background-color: #e3e3e3; /* Light pink */
+        padding: 2em;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        max-width: 600px;
+        margin: 0 auto;
+      }
+
+      .social-media h2 {
+        color: #cc0000; /* Bold red */
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 1em;
+      }
+
+      .social-media ul {
+        list-style: none;
+        padding: 0;
+        text-align: center;
+      }
+
+      .social-media li {
+        display: inline-block;
+        margin-right: 15px;
+        font-size: 30px;
+      }
+
+      .social-media a {
+        color: #333;
+        text-decoration: none;
+      }
+
+      .social-media a:hover {
+        color: #4CAF50; /* Green hover effect */
+      }
+
+      /* Responsive Design */
+      @media (max-width: 768px) {
+        .contact-form, .contact-info, .social-media {
+          padding: 1em;
+        }
+
+        .social-media li {
+          margin-right: 10px;
+        }
+      }
+
+      /* Background Image */
+      .contact {
+        background-image: url('your-photo.jpg'); /* Add a relevant background photo here */
+        background-size: cover;
+        background-position: center;
+        color: rgb(11, 10, 10);
+      }
+    </style>
+  </head>
+  
+  <body>
+    <!-- Contact Page -->
+    <section class="contact">
+      <h1>Get in Touch</h1>
+      
+      <!-- Contact Form -->
+       <form action="contact.php" method="post">
+      <section class="contact-form">
+        <h2>Send Us a Message</h2>
+        <form>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name"><br>
+          
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email"><br>
+          
+          <label for="message">Message:</label>
+          <textarea id="message" name="message"></textarea><br>
+          
+          <input type="submit" value="Send">
+        </form>
+      </section>
+      </form>
+
+      <!-- Contact Info -->
+      <section class="contact-info">
+        <h2>Contact Information</h2>
+        <ul>
+          <li><i class="fa fa-phone"></i> Phone: +1 (123) 456-7890</li>
+          <li><i class="fa fa-envelope"></i> Email: <a href="mailto:infoextranal@gmail.com">infoextranal@gmail.com</a></li>
+          <li><i class="fa fa-map-marker"></i> Office Location: 123 Main St, Maradana, Colombo</li>
+        </ul>
+      </section>
+
+      <!-- Social Media Links -->
+      <section class="social-media">
+        <h2>Follow Us</h2>
+        <ul>
+          <li><a href="#" class="fa fa-facebook"></a></li>
+          <li><a href="#" class="fa fa-twitter"></a></li>
+          <li><a href="#" class="fa fa-instagram"></a></li>
+          <li><a href="#" class="fa fa-linkedin"></a></li>
+        </ul>
+      </section>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Index</title>
+<style>
+body {
+  font-family: 'Inika';
+  font-style: italic;
+  background-color: #dcacac;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fbfbfb;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #555;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+textarea {
+  height: 100px;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+  display: block;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.table-results {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.table-results th,
+.table-results td {
+  padding: 10px;
+  border: 0px solid #ccc;
+  text-align: left;
+}
+</style>
+</head>
+<body>
+  <form action="Bitform.php" method="post" netlify-honeypot="bot-field"
+  data-netlify="true">
+    <div class="container">
+      <h1>REGISTRATION FORM</h1>
+      
+      <h3>PERSONAL PARTICULARS</h3>
+      <div class="form-group">
+        <label for="name">Name in full</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="nic">NIC</label>
+        <input type="text" id="nic" name="nic" required>
+      </div>
+      <div class="form-group">
+        <label for="dob">Date of Birth</label>
+        <input type="date" id="dob" name="dob" required>
+      </div>
+      <div class="form-group">
+        <label for="surname">Last Name/Surname</label>
+        <input type="text" id="surname" name="surname" required>
+      </div>
+      <div class="form-group">
+        <label for="gender">Gender</label>
+        <select id="gender" name="gender">
+          <option value="">--Select Gender--</option>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="address">Address</label>
+        <textarea id="address" name="address" required></textarea>
+      </div>
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="mobile">Mobile Number</label>
+        <input type="text" id="mobile" name="mobile" required>
+      </div>
+      <div class="form-group">
+        <label for="telephone">Telephone No</label>
+        <input type="text" id="telephone" name="telephone" required>
+      </div>
+      <h3>ACADEMIC QUALIFICATIONS</h3>
+      <h4>G.C.E (Advanced Level)</h4>
+      <div class="form-group">
+        <label for="exam_year">Examination Year</label>
+        <input type="text" id="exam_year" name="exam_year" required>
+      </div>
+      <div class="form-group">
+        <label for="stream">Stream of Study</label>
+        <input type="text" id="stream" name="stream" required>
+      </div>
+      <div class="form-group">
+        <label for="index">Index No</label>
+        <input type="text" id="index" name="index" required>
+      </div>
+      <div class="form-group">
+        <label for="zscore">Z score</label>
+        <input type="text" id="zscore" name="zscore" required>
+      </div>
+      <h3>Results of G.C.E (Advanced Level):</h3>
+      <table class="table-results">
+        <thead>
+          <tr>
+            <th>Subject</th>
+            <th>Result</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><input type="text" name="subject1"></td>
+            <td>
+              <select name="result1">
+                <option value="">--Select Result--</option>
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="F">F</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><input type="text" name="subject2"></td>
+            <td>
+              <select name="result2">
+                <option value="">--Select Result--</option>
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="F">F</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><input type="text" name="subject3"></td>
+            <td>
+              <select name="result3">
+                <option value="">--Select Result--</option>
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="F">F</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><input type="text" name="subject4"></td>
+            <td>
+              <select name="result4">
+                <option value="">--Select Result--</option>
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="F">F</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><input type="text" name="subject5"></td>
+            <td>
+            
+                <input type ="text" name="result5">
+            
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <h3>DECLARATION</h3>
+      <p>I certify that the above information I submitted is true and correct to the best of my knowledge.</p>
+      <button type="submit" >SUBMIT</button>
+    </div>
+  </form>
+</body>
+</html>
